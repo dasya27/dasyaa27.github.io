@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 3</title>
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="font-family: sans-serif">
     
     <header>
         <div class="header_wrapper">
-            <img src="coala.png" alt="logo">
+            <img src="logo.png" alt="logo">
             <div id="logo_text">
-                <h1>WORLD ANIMALS</h1>
+                <h1>Only Plants</h1>
             </div>
         </div>
     </header>
     <div class="content">
 
         <nav>
-            <a href="#links">LINKS</a>
-            <a href="#table">TABLE</a>
-            <a href="#form">FORM</a>
-            <a href="#footer">FOOTER</a>
+            <a href="#links">Links</a>
+            <a href="#table">Table</a>
+            <a href="#form">Form</a>
+            <a href="#footer">Footer</a>
         </nav>
 
         <div class="links" id="links">
@@ -91,14 +92,14 @@
                     Ссылка - изображение:
                     <br>
                     <a href="https://www.nationalgeographic.com/animals/mammals/facts/koala">
-                        <img src="coala.png" style="width: 150px" alt="Ссылка - изображение" title="Ссылка-изображение">
+                        <img src="link.png" style="max-width: 150px" alt="Ссылка - изображение" title="Ссылка-изображение">
                     </a>
                 </li>
                 <li>
                     Используем тег map:
                     <br>
                     <br>
-                    <img src="figure.png" usemap = "#figuri" alt="">
+                    <img src="figure.png" style="max-width: 460px"usemap = "#figuri" alt="">
                     <map name="figuri">
                         <area shape="circle" coords="111,122,75" href="https://www.nationalgeographic.com/animals/reptiles/facts/green-sea-turtle" alt="черепаха" title="черепаха">
                         <area shape="rect" coords="236,53,404,191" href="https://www.nationalgeographic.com/photo-of-the-day/photo/snail-green-leaf" alt="улитка" title="улитка">
@@ -138,7 +139,7 @@
             </ol>
         </div>
 
-        <div class="table" id="table">
+        <div class="tab" id="table">
             <h1 class="title">
                 Table
             </h1>
@@ -197,61 +198,68 @@
             </table>
         </div>
 
-        <div class="form" id="form">
+        <div class="for" id="form">
         <h1 id="form" class="title">
             Form
         </h1>
         <form action="http://foo.com">
-            <label>
-                <b>Имя:</b>
-                <input type="text" name="firstname" placeholder="Алиса" class="name">
-            </label> <br><br>
+            <div class="first">
+                <label>
+                    <b>Имя:</b>
+                    <input type="text" name="firstname" placeholder="Алиса" class="name">
+                </label> <br><br>
+        
+                <label>
+                    <b>Почта:</b>
+                    <input type="email" name="email" placeholder="alice@gmail.com" class="mail">
+                </label> <br><br>
+        
+                <label>
+                    <b>Дата рождения:</b>
+                    <input type="date" name="date">
+                </label> <br><br><br>
+
+                <label>
+                    <b>Расскажите о себе:</b><br><br>
+                    <textarea name="comment" rows="5" cols="35"></textarea>
+                </label>
+                <br><br><br>
+            </div>
     
-            <label>
-                <b>Почта:</b>
-                <input type="email" name="email" placeholder="alice@gmail.com" class="name">
-            </label> <br><br>
+            <div class="second">
+                <b>Ваш пол:</b>
+                <input type="radio" name="sex" value="woman" checked>Мужской
+                <input type="radio" name="sex" value="man">Женский<br><br>
+
+
+                <b>Количество конечностей:</b><br><br>
+                <input type="radio" name="count" value="one">Одна
+                <input type="radio" name="count" value="two">Две
+                <input type="radio" name="count" value="three">Три
+                <input type="radio" name="count" value="four" checked>Четыре<br>
+                <br>
+
+                <label>
+                    <div class="in_second">
+                        <b>Способности:</b>
+                        <select name="select" multiple>
+                        <option value="1">Бессмертие</option>
+                        <option value="2">Прохождение сквозь стены</option>
+                        <option value="3">Левитация</option>
+                    </select>
+                    </div>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="a" value="yes"><b>С контрактом ознакомлен(а)</b>
+                </label><br><br><br>
+        
+                <label>
+                    <button type="submit"><b>Отправить</b></button>
+                </label>
+            </div>
     
-            <label>
-                <b>Дата рождения:</b>
-                <input type="date" name="date">
-            </label> <br><br>
-    
-            <b>Ваш пол:</b><br><br>
-            <input type="radio" name="sex" value="woman" checked>Мужской
-            <input type="radio" name="sex" value="man">Женский<br><br>
-    
-    
-            <b>Количество конечностей:</b><br><br>
-            <input type="radio" name="count" value="one">Одна
-            <input type="radio" name="count" value="two">Две<br><br>
-            <input type="radio" name="count" value="three">Три
-            <input type="radio" name="count" value="four" checked>Четыре<br><br>
-            <br>
-    
-            <label>
-                <b>Ваши суперспособности:</b><br><br>
-                <select name="select" multiple>
-                    <option value="1">Бессмертие</option>
-                    <option value="2">Прохождение сквозь стены</option>
-                    <option value="3">Левитация</option>
-                </select>
-            </label>
-            <br><br>
-    
-            <label>
-                <b>Расскажите о себе:</b><br><br>
-                <textarea name="comment" rows="5" cols="40"></textarea>
-            </label>
-            <br><br>
-    
-            <label>
-                <input type="checkbox" name="a" value="yes"><b>С контрактом ознакомлен(а)</b>
-            </label><br><br>
-    
-            <label>
-                <button type="submit"><b>Отправить</b></button>
-            </label>
+            
         </form>
         </div>
 
@@ -259,9 +267,8 @@
     </div>
 
     <footer id="footer">
-        <b>by Daria Yatsenko 2022</b>
+        by Daria Yatsenko 2022
     </footer>
 
 </body>
 </html>
-
