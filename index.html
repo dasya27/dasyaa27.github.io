@@ -10,6 +10,7 @@
 </head>
 <body style="font-family: sans-serif">
     
+    <!-- header -->
     <header>
         <div class="header_wrapper">
             <img src="logo.png" alt="logo">
@@ -18,6 +19,8 @@
             </div>
         </div>
     </header>
+
+    <!-- content -->
     <div class="content">
 
         <nav>
@@ -28,7 +31,10 @@
         </nav>
 
         <div class="links" id="links">
-            <h1 id="links" class="title">Links</h1>
+            
+            <h1 class="title">
+                Links
+            </h1>
     
             <ol>
                 <li>
@@ -198,69 +204,81 @@
             </table>
         </div>
 
-        <div class="for" id="form">
-        <h1 id="form" class="title">
-            Form
-        </h1>
-        <form action="http://foo.com">
-            <div class="first">
-                <label>
-                    <b>Имя:</b>
-                    <input type="text" name="firstname" placeholder="Алиса" class="name">
-                </label> <br><br>
-        
-                <label>
-                    <b>Почта:</b>
-                    <input type="email" name="email" placeholder="alice@gmail.com" class="mail">
-                </label> <br><br>
-        
-                <label>
-                    <b>Дата рождения:</b>
-                    <input type="date" name="date">
-                </label> <br><br><br>
-
-                <label>
-                    <b>Расскажите о себе:</b><br><br>
-                    <textarea name="comment" rows="5" cols="35"></textarea>
-                </label>
-                <br><br><br>
-            </div>
-    
-            <div class="second">
-                <b>Ваш пол:</b>
-                <input type="radio" name="sex" value="woman" checked>Мужской
-                <input type="radio" name="sex" value="man">Женский<br><br>
-
-
-                <b>Количество конечностей:</b><br><br>
-                <input type="radio" name="count" value="one">Одна
-                <input type="radio" name="count" value="two">Две
-                <input type="radio" name="count" value="three">Три
-                <input type="radio" name="count" value="four" checked>Четыре<br>
-                <br>
-
-                <label>
-                    <div class="in_second">
-                        <b>Способности:</b>
-                        <select name="select" multiple>
-                        <option value="1">Бессмертие</option>
-                        <option value="2">Прохождение сквозь стены</option>
-                        <option value="3">Левитация</option>
-                    </select>
+        <div class="form_wrapper" id="form">
+            <h1 id="form" class="title">
+                Form
+            </h1>
+            <form action="http://foo.com">
+                
+                <div class="first">
+                    <div class="name">
+                        <label>
+                            <b>Имя:</b>
+                            <input type="text" name="firstname" placeholder="Алиса">
+                        </label> <br>
                     </div>
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" name="a" value="yes"><b>С контрактом ознакомлен(а)</b>
-                </label><br><br><br>
-        
-                <label>
-                    <button type="submit"><b>Отправить</b></button>
-                </label>
-            </div>
-    
             
-        </form>
+                    <div class="mail">
+                        <label>
+                            <b>Почта:</b>
+                            <input type="email" name="email" placeholder="alice@gmail.com">
+                        </label> <br>
+                    </div>
+            
+                    <div class="date">
+                        <label >
+                            <b>Дата рождения:</b>
+                            <input type="date" name="date">
+                        </label> <br>
+                    </div>
+
+                    <div class="tell">
+                        <label>
+                            <b>Расскажите о себе:</b><br><br>
+                            <textarea name="comment" rows="5" cols="34"></textarea>
+                        </label>
+                    </div>
+                </div>
+        
+                <div class="second">
+                    
+                    <div class="sex">
+                        <b>Ваш пол:</b>
+                        <input type="radio" name="sex" value="woman" checked>Мужской
+                        <input type="radio" name="sex" value="man">Женский
+                    </div>
+
+
+                    <div class="arm">
+                        <b>Количество конечностей:</b><br><br>
+                        <input type="radio" name="count" value="one">Одна
+                        <input type="radio" name="count" value="two">Две
+                        <input type="radio" name="count" value="three">Три
+                        <input type="radio" name="count" value="four" checked>Четыре
+                    </div>
+
+                    <div class="can">
+                        <b>Способности:</b><br><br>
+                        <select name="select" multiple>
+                            <option value="1">Рисовать</option>
+                            <option value="2">Спать</option>
+                            <option value="3">Учиться</option>
+                        </select>
+                    </div>
+
+                    <label>
+                        <div class="check">
+                            <input type="checkbox" name="a" value="yes" class="check_rec"><b>С контрактом ознакомлен(а)</b>
+                        </div>
+                    </label>
+
+                </div>
+                
+                <div class="btn">
+                    <button type="submit">ОТПРАВИТЬ</button>
+                </div>
+                
+            </form>
         </div>
 
         
