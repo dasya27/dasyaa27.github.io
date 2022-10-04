@@ -175,6 +175,10 @@ header .header_wrapper img {
     flex-direction: column;
 }
 
+.tell {
+    margin-bottom: 20px;
+}
+
 .sex {
     margin-bottom: 30px;
 }
@@ -187,7 +191,7 @@ header .header_wrapper img {
 }
 
 .arm input {
-    margin-left: 12px;
+    margin-left: 9px;
 }
 
 .can {
@@ -216,7 +220,7 @@ header .header_wrapper img {
 
 button {
     display: block;
-    margin: 55px auto;
+    margin: 45px auto;
     border: none;
     border-radius: 4px;
     cursor: pointer;
